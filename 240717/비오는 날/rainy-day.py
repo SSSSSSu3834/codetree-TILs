@@ -13,6 +13,7 @@ for _ in range(n):
     date, day,weath = input().split()
     inform.append(Weather(date, day,weath))
 
+inform.sort(key = lambda weather: weather.date)
  
 for i in inform:
     if i.weath == "Rain":
