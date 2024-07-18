@@ -3,7 +3,7 @@ n = int(input())
 # 원점에서 짧은 거리부터 출력(오름차순 출력)
 spots= []
 
-for i in range(2):
+for i in range(n):
     x, y = map(int, input().split())
     spots.append((x, y, i+1))
 
