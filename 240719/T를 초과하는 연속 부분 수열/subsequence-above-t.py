@@ -5,7 +5,6 @@ result = 0
 
 num = list(map(int,input().split()))
 
-print(num)
 
 
 for i in range(n):
