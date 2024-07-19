@@ -9,7 +9,7 @@ for _ in range(n):
 
 
 for i in range(n):
-    if i==0 or num[i] == num[i-1]:
+    if num[i] == num[i-1]:
         count+=1
         if result < count:
             result = count
