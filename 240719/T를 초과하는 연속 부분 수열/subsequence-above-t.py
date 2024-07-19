@@ -27,7 +27,7 @@ for i in range(n):
     else:
         count = 0
 
-if result < 1:
+if result < 2:
     print(0)
 else:
     print(result)
