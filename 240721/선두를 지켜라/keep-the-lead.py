@@ -34,9 +34,16 @@ for i in b:
         Lb.append(bx)
 
 
-for i in range(1, len(La)+1):
+for i in range(len(La)):
 
-    if La[i-1] > Lb[i-1] and La[i] >= Lb[i]:
+    if La[i] == Lb[i]:
+          if La[i-1] > Lb[i-1]:
+            result.append("A")
+          else:
+            result.append("B")
+          
+
+    if La[i] > Lb[i]:
         result.append("A")
     else:
         result.append("B")
