@@ -7,7 +7,6 @@ result = []
 for i in range(n):
     result.append(list(input().split()))
 
-print(result)
 
 for i in result:
     if(i[0] == 'add'):
