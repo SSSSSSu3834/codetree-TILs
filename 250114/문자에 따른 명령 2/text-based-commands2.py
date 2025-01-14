@@ -14,9 +14,11 @@ for i in list(dirs):
         dir = (dir + 3)% 4
     else:
         nx, ny = x + dx[dir], y + dy[dir]
+        x=nx
+        y=ny
 
 
-print(nx, ny)
+print(x,y)
         
     
 
