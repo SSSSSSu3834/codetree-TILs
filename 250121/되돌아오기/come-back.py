@@ -28,7 +28,7 @@ for i in range(N):
 
         cnt+=1
 
-        if x ==0 and y ==0:
+        if x ==0 and y ==0 and bol == False:
             print(cnt)
             bol = True
             break
