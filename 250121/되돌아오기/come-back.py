@@ -30,5 +30,8 @@ for i in range(N):
         if x ==0 and y ==0:
             print(cnt)
             break
+    
+    if i==(N-1):
+        print(-1)
 
 
