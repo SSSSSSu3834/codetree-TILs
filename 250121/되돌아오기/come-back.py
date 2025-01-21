@@ -18,9 +18,10 @@ direct = {
 }
 
 cnt = 0
+bol = False
 
 for i in range(N):
-    for _ in range(dist[i]):
+    for j in range(dist[i]):
         dirn = direct[dir[i]]
         x = x + dxs[dirn]
         y = y + dys[dirn]
@@ -29,9 +30,14 @@ for i in range(N):
 
         if x ==0 and y ==0:
             print(cnt)
+            bol = True
             break
-    
-    if i==(N-1):
-        print(-1)
+
+
+if not bol:
+    print(-1)
+
+
+
 
 
