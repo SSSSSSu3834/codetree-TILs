@@ -14,18 +14,17 @@ for i in commands:
     if i == "R":
         dir = (dir+1)%4
 
-    if i=="L":
+    elif i=="L":
         dir = (dir+3)%4
 
-    if i=="F":
+    elif i=="F":
         x = x + dxs[dir]
         y = y + dys[dir]
 
     time += 1
-
     if x==0 and y==0:
         print(time)
         break
-    if i==len(commands)-1 and x !=0 and y!=0:
+    if time==len(commands) and (x!=0 or y!=0):
         print(-1)
     
